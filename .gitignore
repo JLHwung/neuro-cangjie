@@ -1,8 +1,10 @@
 data/fonts/*
-data/cangjie6_encoded.txt
-checkpoints/*
-Cangjie_Model/*
+cangjie*/*
 .ipynb_checkpoints
 !.keep
 __pycache__
-Figures/Graph.ai
+.DS_Store
+*.ai
+*.7z
+*.tflite
+full_test.py
