@@ -93,7 +93,7 @@ def produce_data(img_size=128):
     except:
         glyphbook = Glyph(['data/fonts/TH-Tshyn-P0.ttf', 'data/fonts/TH-Tshyn-P1.ttf', 'data/fonts/TH-Tshyn-P2.ttf'],
                       size=img_size)
-        code_chart = pd.read_csv('data/cangjie6.txt', delimiter='\t', header=None, names=['Char', 'Code'], keep_default_na=False)
+        code_chart = pd.read_csv('data/Cangjie5.txt', delimiter='\t', header=None, names=['Char', 'Code', 'Note'], keep_default_na=False)
         transformed_chart = code_chart.groupby('Char').apply(lambda x: ','.join(x['Code'].to_list()))
         transformed_chart = transformed_chart.sample(frac=1, random_state=2023)
 
