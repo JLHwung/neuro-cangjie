@@ -3,4 +3,4 @@ fonttools==4.39.2
 numpy==1.23.2
 pandas==1.5.3
 tensorflow==2.10.0
-tensorflow-model-optimization=0.7.3
+tensorflow-model-optimization==0.7.3
