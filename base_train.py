@@ -195,7 +195,7 @@ class SparseCategoricalAccuracy(tf.keras.metrics.Metric):
     def result(self):
         return self.count / self.total
 
-    def reset_states(self):
+    def reset_state(self):
         self.count.assign(0)
         self.total.assign(0)
 
